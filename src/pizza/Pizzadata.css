@@ -1,0 +1,115 @@
+
+.maran-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.maran-header header {
+  margin-bottom: 4.8rem; 
+}
+.maran-header header p {
+  font-size: 2rem;
+}
+
+.Heading {
+  font-size: 5.2rem;
+  font-weight: 300;
+  color: #edc84b;
+  position: relative;
+}
+
+.Heading::before,
+.Heading::after {
+  content: '';
+  position: absolute;
+  width: 12rem;
+  height: 3px;
+  background-color: #edc84b;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Heading::before {
+  left: -16.4rem; /* Adjust position as needed */
+}
+
+.Heading::after {
+  right: -16.4rem; /* Adjust position as needed */
+}
+
+.ourmenu {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem; /* Adjust margin as needed */
+}
+
+/* CSS for Main */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4.8rem; 
+}
+
+.pizza-box {
+  display: flex;
+  flex: 0 0 calc(50% - 4.8rem); /* Two columns with gap between them */
+  max-width: calc(50% - 4.8rem); 
+} 
+
+.pizza-box img {
+  width: 40%;
+  height: auto;
+}
+
+.pizza-details {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pizza-name {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.pizza-ingredients {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.pizza-quantity {
+  font-size: 1.6rem;
+  color: red;
+}
+
+.pizza-quantity.sold-out {
+  color: gray;
+  text-decoration: line-through;
+}
+
+/* CSS for Footer */
+footer {
+  text-align: center;
+  margin-top: 4.8rem; /* Adjust margin as needed */
+}
+
+.footer-para {
+  font-size: 1.4rem;
+}
+
+.order-btn {
+  background-color: #edc84b;
+  color: #252525;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: none;
+  padding: 1.4rem 3.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.order-btn:hover {
+  background-color: #e9bb24;
+}

@@ -1,0 +1,92 @@
+.step-project {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}  
+  
+  
+  .step-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid orangered; 
+    border-radius: 10px; 
+    
+  }
+  
+  .number-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .number-box span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .number-box span.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .msg-box {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .msg-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .msg-box p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .learn-button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+  }
+  
+  .learn-button:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-box {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    background-color: #008CBA; /* Blue button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #007bb5; 
+  }
+  

@@ -1,0 +1,91 @@
+
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}  
+h3 {
+    margin: 10px 0;
+}
+h5 {
+    margin: 7px 0;
+    text-transform: uppercase;
+}
+p {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.cardcontainer {
+    background: rgb(42, 35, 35);
+    border-radius: 7px;
+    color: azure;
+    box-shadow: 3px 8px 15px 8px black;
+    padding: 30px;
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+}
+.image {
+    height: 100px;
+    width: 100px;
+    border: 3px solid red;
+    border-radius: 50%;
+    padding: 4px;
+}
+.active {
+    color: aqua;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 7px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.online {
+    background-color: greenyellow;
+    color: azure;
+}
+.offline {
+    background-color: orange;
+    color: white;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.button .primary{
+    background-color: aqua;
+    color: red;
+    border: 1px solid blue;
+    border-radius: 3px;
+    padding: 8px 25px;
+}
+.button .primary.outline {
+    background-color: transparent;
+}
+.skills {
+    text-align: left;
+    padding: 15px;
+    margin-top: 15px;
+}
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.skills ul li {
+    border: 2px solid aqua;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 7px 7px 0;
+    font-size: 17px;
+}
