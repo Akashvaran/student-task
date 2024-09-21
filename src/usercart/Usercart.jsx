@@ -1,4 +1,3 @@
-
 import PropTypes from 'prop-types';
 import './Usercart.css';
 
@@ -31,27 +30,25 @@ const userData = [
 
 function Usercart({ name, city, course, online, profile, skills }) {
   return (
-    <div className='root'>
-      <div className='cardcontainer'>
-        <span className={online ? "active online" : "active offline"}>
-          {online ? "ONLINE" : "OFFLINE"}
-        </span>
-        <img src={profile} alt='User' className='image' />
-        <h3>{name}</h3>
-        <h3>{city}</h3>
-        <p>{course}</p>
-        <div className='button'>
-          <button className='primary'>Message</button>
-          <button className='primary outline'>Following</button>
-        </div>
-        <div className='skills'>
-          <h5>Skills</h5>
-          <ul>
-            {skills.map((skill, index) => (
-              <li key={index}>{skill}</li>
-            ))}
-          </ul>
-        </div>
+    <div className='cardcontainer'>
+      <span className={online ? "active online" : "active offline"}>
+        {online ? "ONLINE" : "OFFLINE"}
+      </span>
+      <img src={profile} alt='User' className='image' />
+      <h3>{name}</h3>
+      <h3>{city}</h3>
+      <p>{course}</p>
+      <div className='button'>
+        <button className='primary'>Message</button>
+        <button className='primary outline'>Following</button>
+      </div>
+      <div className='skills'>
+        <h5>Skills</h5>
+        <ul>
+          {skills.map((skill, index) => (
+            <li key={index}>{skill}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
@@ -69,7 +66,7 @@ Usercart.propTypes = {
 
 export const Mydata = () => {
   return (
-    <>
+    <div className='root'>
       {userData.map((value, index) => (
         <Usercart
           key={index}
@@ -81,6 +78,6 @@ export const Mydata = () => {
           skills={value.skills}
         />
       ))}
-    </>
+    </div>
   );
 };

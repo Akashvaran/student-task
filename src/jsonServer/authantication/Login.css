@@ -1,0 +1,101 @@
+
+.loginform-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.form-container { 
+  background-color: #e0455f;
+  min-width: 400px;
+  border-radius: 10px; 
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aqua;
+ 
+}
+
+
+.element-container {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative; 
+}
+
+.element-container label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.element-container input[type="text"],
+.element-container input[type="radio"] {
+  width: 100%; 
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+
+.element-container input[type="text"]:focus,
+.element-container input[type="radio"]:focus {
+  border-color: #f5576c;
+}
+
+.element-container input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.element-container input.error {
+  border: 2px solid #e74c3c;
+}
+
+
+.error-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e74c3c;
+  font-size: 1.1em;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #f5576c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+button[type="submit"]:hover {
+  background: #e0455f;
+}
+
+
+
+  

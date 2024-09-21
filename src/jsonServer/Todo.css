@@ -1,0 +1,51 @@
+.navicate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.main-container {
+  width: 350px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #e0e0e0, #f0f0f0);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.user-icon {
+  margin-bottom: 30px;
+  color: #4caf50;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.auth-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 30px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.auth-button:hover {
+  background-color: #388e3c;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  
+}
+

@@ -1,4 +1,4 @@
-
+/* Container for Usercards */
 .root {
     display: flex;
     align-items: center;
@@ -6,14 +6,20 @@
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 80px;
-}  
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h3 {
     margin: 10px 0;
 }
+
 h5 {
     margin: 7px 0;
     text-transform: uppercase;
 }
+
 p {
     font-size: 18px;
     line-height: 21px;
@@ -30,7 +36,10 @@ p {
     max-width: 100%;
     text-align: center;
     position: relative;
+    /* Ensure proper sizing */
+    box-sizing: border-box;
 }
+
 .image {
     height: 100px;
     width: 100px;
@@ -38,6 +47,7 @@ p {
     border-radius: 50%;
     padding: 4px;
 }
+
 .active {
     color: aqua;
     border-radius: 3px;
@@ -53,35 +63,42 @@ p {
     background-color: greenyellow;
     color: azure;
 }
+
 .offline {
     background-color: orange;
     color: white;
 }
-.button{
+
+.button {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.button .primary{
+
+.button .primary {
     background-color: aqua;
     color: red;
     border: 1px solid blue;
     border-radius: 3px;
     padding: 8px 25px;
 }
+
 .button .primary.outline {
     background-color: transparent;
 }
+
 .skills {
     text-align: left;
     padding: 15px;
     margin-top: 15px;
 }
+
 .skills ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 .skills ul li {
     border: 2px solid aqua;
     display: inline-block;

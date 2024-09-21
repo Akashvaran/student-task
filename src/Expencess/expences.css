@@ -126,3 +126,27 @@ input{
 .close{
     visibility: hidden;
 }
+
+.billvalue-display {
+    border: 2px solid yellow;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.child-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.child-container p {
+    font-size: 18px;
+    color: #666; 
+    margin: 0;
+}

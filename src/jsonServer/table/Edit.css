@@ -1,0 +1,136 @@
+/* Overlay for modal appearance */
+.editform-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Styling for the content of the modal */
+.editform-content {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  width: 450px;
+  max-height: 80vh; /* Limits the modal height to 80% of the viewport height */
+  overflow-y: auto; /* Enables vertical scrollbar when content exceeds height */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for form headings */
+.editform-content h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #444;
+  text-align: center;
+}
+
+/* Header section for the form */
+.editfrom-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Close button styling */
+.closebutton {
+  font-size: 24px;
+  cursor: pointer;
+  color: #444;
+  background: transparent;
+  border: none;
+  transition: color 0.3s;
+}
+
+.closebutton:hover {
+  color: #ff4c4c;
+}
+
+/* Styling for each form group */
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Styling for form labels */
+.editform-content label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for form inputs and select elements */
+.editform-content input,
+.editform-content select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #555;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Input focus state */
+.editform-content input:focus,
+.editform-content select:focus {
+  border-color: #007bff;
+}
+
+/* Styling for error inputs */
+.editform-content input.error,
+.editform-content select.error {
+  border-color: #e74c3c;
+}
+
+/* Styling for error icons */
+.error-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e74c3c;
+  font-size: 18px;
+}
+
+/* Styling for error messages */
+.error-message {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* Styling for buttons */
+.editform-content button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Custom scrollbar styling */
+.editform-content::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
+
+.editform-content::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.editform-content::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
